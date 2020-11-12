@@ -45,35 +45,25 @@ Connection ~ 5350 4150
 $Comp
 L Device:R R1
 U 1 1 5F9E8B14
-P 6150 3400
-F 0 "R1" H 6220 3446 50  0000 L CNN
-F 1 "300" H 6220 3355 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6080 3400 50  0001 C CNN
-F 3 "~" H 6150 3400 50  0001 C CNN
-	1    6150 3400
-	0    -1   -1   0   
+P 6600 3550
+F 0 "R1" H 6670 3596 50  0000 L CNN
+F 1 "300" H 6670 3505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6530 3550 50  0001 C CNN
+F 3 "~" H 6600 3550 50  0001 C CNN
+	1    6600 3550
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D1
 U 1 1 5F9F021C
-P 6600 3850
-F 0 "D1" V 6639 3733 50  0000 R CNN
-F 1 "LED" V 6548 3733 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric" H 6600 3850 50  0001 C CNN
-F 3 "~" H 6600 3850 50  0001 C CNN
-	1    6600 3850
+P 6600 3900
+F 0 "D1" V 6650 3825 50  0000 R CNN
+F 1 "LED" V 6550 3825 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 6600 3900 50  0001 C CNN
+F 3 "~" H 6600 3900 50  0001 C CNN
+	1    6600 3900
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	6000 3400 5850 3400
-Wire Wire Line
-	6300 3400 6600 3400
-Wire Wire Line
-	6600 3400 6600 3700
-Wire Wire Line
-	6600 4000 6600 4150
-Wire Wire Line
-	6600 4150 6300 4150
 $Comp
 L Device:C C1
 U 1 1 5F9E433C
@@ -168,38 +158,25 @@ Wire Wire Line
 $Comp
 L Device:R R2
 U 1 1 5F9FE46D
-P 6150 3600
-F 0 "R2" V 6050 3650 50  0000 L CNN
-F 1 "1K" V 6050 3500 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6080 3600 50  0001 C CNN
-F 3 "~" H 6150 3600 50  0001 C CNN
-	1    6150 3600
-	0    -1   -1   0   
+P 6050 3400
+F 0 "R2" V 5950 3350 50  0000 L CNN
+F 1 "1K" V 6050 3350 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5980 3400 50  0001 C CNN
+F 3 "~" H 6050 3400 50  0001 C CNN
+	1    6050 3400
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_POT_Small RV1
 U 1 1 5F9FFCAC
-P 6300 3900
-F 0 "RV1" H 6241 3946 50  0000 R CNN
-F 1 "10K" H 6241 3855 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Vishay_T73YP_Vertical" H 6300 3900 50  0001 C CNN
-F 3 "~" H 6300 3900 50  0001 C CNN
-	1    6300 3900
-	1    0    0    -1  
+P 6250 3600
+F 0 "RV1" V 6175 3675 50  0000 R CNN
+F 1 "10K" V 6250 3675 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Vishay_T73YP_Vertical" H 6250 3600 50  0001 C CNN
+F 3 "~" H 6250 3600 50  0001 C CNN
+	1    6250 3600
+	0    1    1    0   
 $EndComp
-Wire Wire Line
-	6400 3900 6450 3900
-Wire Wire Line
-	6450 3900 6450 3600
-Wire Wire Line
-	6450 3600 6300 3600
-Wire Wire Line
-	6000 3600 5850 3600
-Wire Wire Line
-	6300 4000 6300 4150
-Connection ~ 6300 4150
-Wire Wire Line
-	6300 4150 5350 4150
 Wire Wire Line
 	3500 3350 3600 3350
 Wire Wire Line
@@ -247,8 +224,6 @@ Wire Wire Line
 	7700 2800 7700 3100
 Wire Wire Line
 	7700 3100 7550 3100
-Wire Wire Line
-	5350 2950 6900 2950
 Connection ~ 6900 2950
 Wire Wire Line
 	6900 2950 6900 2800
@@ -261,9 +236,6 @@ Wire Wire Line
 	7550 3600 7700 3600
 Wire Wire Line
 	7050 3700 7050 4150
-Wire Wire Line
-	7050 4150 6600 4150
-Connection ~ 6600 4150
 Wire Wire Line
 	7550 3700 7700 3700
 Wire Wire Line
@@ -344,4 +316,34 @@ Wire Wire Line
 	3500 3600 3600 3600
 Wire Wire Line
 	3600 3600 3600 3550
+Wire Wire Line
+	5350 2950 6050 2950
+Wire Wire Line
+	5350 4150 6600 4150
+Wire Wire Line
+	5850 3400 6600 3400
+Wire Wire Line
+	6600 3700 6600 3750
+Wire Wire Line
+	6600 4050 6600 4150
+Connection ~ 6600 4150
+Wire Wire Line
+	6600 4150 7050 4150
+Wire Wire Line
+	5850 3600 6050 3600
+Wire Wire Line
+	6050 3600 6050 3550
+Wire Wire Line
+	6050 3250 6050 2950
+Connection ~ 6050 2950
+Wire Wire Line
+	6050 2950 6900 2950
+Wire Wire Line
+	6150 3600 6050 3600
+Connection ~ 6050 3600
+Wire Wire Line
+	6250 3700 6250 3800
+Wire Wire Line
+	6250 3800 5950 3800
+Connection ~ 5950 3800
 $EndSCHEMATC
