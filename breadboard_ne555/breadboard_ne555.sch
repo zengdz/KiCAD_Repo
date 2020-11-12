@@ -1,0 +1,347 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Timer:NE555 U1
+U 1 1 5F9E2A7B
+P 5350 3600
+F 0 "U1" H 5350 3650 50  0000 C CNN
+F 1 "NE555" H 5350 3550 50  0000 C CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 5350 3600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 5350 3600 50  0001 C CNN
+	1    5350 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 4150 5350 4000
+Wire Wire Line
+	5350 2950 5350 3200
+$Comp
+L power:GND #PWR0101
+U 1 1 5F9E80ED
+P 5350 4250
+F 0 "#PWR0101" H 5350 4000 50  0001 C CNN
+F 1 "GND" H 5355 4077 50  0000 C CNN
+F 2 "" H 5350 4250 50  0001 C CNN
+F 3 "" H 5350 4250 50  0001 C CNN
+	1    5350 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 4250 5350 4150
+Connection ~ 5350 4150
+$Comp
+L Device:R R1
+U 1 1 5F9E8B14
+P 6150 3400
+F 0 "R1" H 6220 3446 50  0000 L CNN
+F 1 "300" H 6220 3355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6080 3400 50  0001 C CNN
+F 3 "~" H 6150 3400 50  0001 C CNN
+	1    6150 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5F9F021C
+P 6600 3850
+F 0 "D1" V 6639 3733 50  0000 R CNN
+F 1 "LED" V 6548 3733 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 6600 3850 50  0001 C CNN
+F 3 "~" H 6600 3850 50  0001 C CNN
+	1    6600 3850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6000 3400 5850 3400
+Wire Wire Line
+	6300 3400 6600 3400
+Wire Wire Line
+	6600 3400 6600 3700
+Wire Wire Line
+	6600 4000 6600 4150
+Wire Wire Line
+	6600 4150 6300 4150
+$Comp
+L Device:C C1
+U 1 1 5F9E433C
+P 4050 3600
+F 0 "C1" H 4100 3700 50  0000 L CNN
+F 1 "104" H 4100 3500 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4088 3450 50  0001 C CNN
+F 3 "~" H 4050 3600 50  0001 C CNN
+	1    4050 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C2
+U 1 1 5F9F3D26
+P 4400 3600
+F 0 "C2" H 4500 3700 50  0000 R CNN
+F 1 "10u" H 4550 3500 50  0000 R CNN
+F 2 "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm" H 4438 3450 50  0001 C CNN
+F 3 "~" H 4400 3600 50  0001 C CNN
+	1    4400 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 3450 4050 2950
+Wire Wire Line
+	4050 2950 4750 2950
+Wire Wire Line
+	4050 3750 4050 4150
+Wire Wire Line
+	4050 4150 4400 4150
+Wire Wire Line
+	4400 3450 4400 3400
+Wire Wire Line
+	4400 3400 4600 3400
+Wire Wire Line
+	4400 3750 4400 4150
+Connection ~ 4400 4150
+$Comp
+L power:+5V #PWR0102
+U 1 1 5F9FA4EB
+P 5350 2800
+F 0 "#PWR0102" H 5350 2650 50  0001 C CNN
+F 1 "+5V" H 5365 2973 50  0000 C CNN
+F 2 "" H 5350 2800 50  0001 C CNN
+F 3 "" H 5350 2800 50  0001 C CNN
+	1    5350 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 2950 5350 2800
+Connection ~ 5350 2950
+Wire Wire Line
+	4850 3800 4750 3800
+Wire Wire Line
+	4750 3800 4750 2950
+Connection ~ 4750 2950
+Wire Wire Line
+	4750 2950 5350 2950
+Wire Wire Line
+	4400 4150 4700 4150
+$Comp
+L Device:C C3
+U 1 1 5F9FB0E3
+P 4700 3950
+F 0 "C3" H 4815 3996 50  0000 L CNN
+F 1 "103" H 4815 3905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4738 3800 50  0001 C CNN
+F 3 "~" H 4700 3950 50  0001 C CNN
+	1    4700 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 3800 4700 3600
+Wire Wire Line
+	4700 3600 4850 3600
+Wire Wire Line
+	4700 4100 4700 4150
+Connection ~ 4700 4150
+Wire Wire Line
+	4700 4150 5350 4150
+Wire Wire Line
+	5850 3800 5950 3800
+Wire Wire Line
+	5950 3800 5950 3150
+Wire Wire Line
+	5950 3150 4600 3150
+Wire Wire Line
+	4600 3150 4600 3400
+Connection ~ 4600 3400
+Wire Wire Line
+	4600 3400 4850 3400
+$Comp
+L Device:R R2
+U 1 1 5F9FE46D
+P 6150 3600
+F 0 "R2" V 6050 3650 50  0000 L CNN
+F 1 "1K" V 6050 3500 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6080 3600 50  0001 C CNN
+F 3 "~" H 6150 3600 50  0001 C CNN
+	1    6150 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_POT_Small RV1
+U 1 1 5F9FFCAC
+P 6300 3900
+F 0 "RV1" H 6241 3946 50  0000 R CNN
+F 1 "10K" H 6241 3855 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Vishay_T73YP_Vertical" H 6300 3900 50  0001 C CNN
+F 3 "~" H 6300 3900 50  0001 C CNN
+	1    6300 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 3900 6450 3900
+Wire Wire Line
+	6450 3900 6450 3600
+Wire Wire Line
+	6450 3600 6300 3600
+Wire Wire Line
+	6000 3600 5850 3600
+Wire Wire Line
+	6300 4000 6300 4150
+Connection ~ 6300 4150
+Wire Wire Line
+	6300 4150 5350 4150
+Wire Wire Line
+	3500 3350 3600 3350
+Wire Wire Line
+	3700 3350 3700 2950
+Wire Wire Line
+	3700 2950 4050 2950
+Connection ~ 4050 2950
+Wire Wire Line
+	3100 3950 3100 4150
+Wire Wire Line
+	3100 4150 3200 4150
+Connection ~ 4050 4150
+Wire Wire Line
+	3200 3950 3200 4150
+Connection ~ 3200 4150
+$Comp
+L Connector_Generic:Conn_02x02_Odd_Even J2
+U 1 1 5FA1814C
+P 7250 3100
+F 0 "J2" H 7300 3317 50  0000 C CNN
+F 1 "Conn_02x02_Odd_Even" H 7300 3226 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" H 7250 3100 50  0001 C CNN
+F 3 "~" H 7250 3100 50  0001 C CNN
+	1    7250 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x02_Odd_Even J3
+U 1 1 5FA1A2AA
+P 7250 3600
+F 0 "J3" H 7300 3817 50  0000 C CNN
+F 1 "Conn_02x02_Odd_Even" H 7300 3726 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" H 7250 3600 50  0001 C CNN
+F 3 "~" H 7250 3600 50  0001 C CNN
+	1    7250 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 3100 6900 3100
+Wire Wire Line
+	6900 3100 6900 2950
+Wire Wire Line
+	6900 2800 7700 2800
+Wire Wire Line
+	7700 2800 7700 3100
+Wire Wire Line
+	7700 3100 7550 3100
+Wire Wire Line
+	5350 2950 6900 2950
+Connection ~ 6900 2950
+Wire Wire Line
+	6900 2950 6900 2800
+Wire Wire Line
+	7050 3600 6900 3600
+Wire Wire Line
+	6900 3600 6900 3500
+Connection ~ 6900 3100
+Wire Wire Line
+	7550 3600 7700 3600
+Wire Wire Line
+	7050 3700 7050 4150
+Wire Wire Line
+	7050 4150 6600 4150
+Connection ~ 6600 4150
+Wire Wire Line
+	7550 3700 7700 3700
+Wire Wire Line
+	7700 3700 7700 4150
+Wire Wire Line
+	7700 4150 7050 4150
+Connection ~ 7050 4150
+Wire Wire Line
+	7050 3200 7000 3200
+Wire Wire Line
+	7000 3200 7000 3350
+Wire Wire Line
+	7000 3350 7600 3350
+Wire Wire Line
+	7600 3350 7600 3200
+Wire Wire Line
+	7600 3200 7550 3200
+Wire Wire Line
+	7700 3600 7700 3500
+Wire Wire Line
+	7700 3500 6900 3500
+Connection ~ 6900 3500
+Wire Wire Line
+	6900 3500 6900 3100
+Wire Wire Line
+	7600 3350 7800 3350
+Wire Wire Line
+	7800 3350 7800 3700
+Wire Wire Line
+	7800 3700 7700 3700
+Connection ~ 7600 3350
+Connection ~ 7700 3700
+Wire Wire Line
+	3200 4150 3600 4150
+$Comp
+L Connector:USB_B_Micro J1
+U 1 1 5FA03AD8
+P 3200 3550
+F 0 "J1" H 3257 4017 50  0000 C CNN
+F 1 "USB_B_Micro" H 3257 3926 50  0000 C CNN
+F 2 "github:USB_Micro-B_Amphenol_10104110_Horizontal" H 3350 3500 50  0001 C CNN
+F 3 "~" H 3350 3500 50  0001 C CNN
+	1    3200 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J4
+U 1 1 5FA512CE
+P 3800 3650
+F 0 "J4" H 3750 3950 50  0000 L CNN
+F 1 "Conn_01x05" V 3900 3450 50  0000 L CNN
+F 2 "Connector_Wuerth:Wuerth_WR-WTB_64800511622_1x05_P1.50mm_Vertical" H 3800 3650 50  0001 C CNN
+F 3 "~" H 3800 3650 50  0001 C CNN
+	1    3800 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 3450 3600 3350
+Connection ~ 3600 3350
+Wire Wire Line
+	3600 3350 3700 3350
+Wire Wire Line
+	3600 3750 3500 3750
+Wire Wire Line
+	3600 3850 3600 4150
+Connection ~ 3600 4150
+Wire Wire Line
+	3600 4150 4050 4150
+Wire Wire Line
+	3500 3550 3550 3550
+Wire Wire Line
+	3550 3550 3550 3650
+Wire Wire Line
+	3550 3650 3600 3650
+Wire Wire Line
+	3500 3650 3500 3600
+Wire Wire Line
+	3500 3600 3600 3600
+Wire Wire Line
+	3600 3600 3600 3550
+$EndSCHEMATC
